@@ -13,23 +13,36 @@
 
     <main>
         <!-- Filter Kategori -->
-        <label for="category">Pilih Kategori:</label>
-        <select id="category" onchange="filterByCategory()">
-            <option value="">Semua</option>
-            <option value="1">Action</option>
-            <option value="10">Romance</option>
-            <option value="13">Isekai</option>
-            <option value="7">Comedy</option>
-        </select>
+        <section class="filter-section">
+            <label for="category">Pilih Kategori:</label>
+            <select id="category" onchange="filterByCategory()">
+                <option value="">Semua</option>
+                <option value="1">Action</option>
+                <option value="10">Romance</option>
+                <option value="13">Isekai</option>
+                <option value="7">Comedy</option>
+            </select>
+        </section>
 
-        <!-- Daftar Manga & Manhwa -->
-        <section id="manga-list"></section>
-        <section id="manhwa-list"></section>
+        <!-- Daftar Manga -->
+        <section class="manga-container">
+            <h2>Daftar Manga</h2>
+            <div id="manga-list"></div>
+        </section>
+
+        <!-- Daftar Manhwa -->
+        <section class="manhwa-container">
+            <h2>Daftar Manhwa</h2>
+            <div id="manhwa-list"></div>
+        </section>
 
         <!-- History -->
-        <section id="history-list"></section>
+        <section class="history-container">
+            <h2>Riwayat Bacaan</h2>
+            <div id="history-list"></div>
+        </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
-</html>
+        </html>
